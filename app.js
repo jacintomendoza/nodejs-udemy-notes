@@ -1,6 +1,8 @@
-const fs = require('fs');
+const notes = require('./notes')
+const yourNotes = notes();
+console.log(yourNotes);
 
-fs.writeFileSync('notes.txt', 'This file was created by Node.js!')
-
-fs.appendFileSync('notes.txt', 'hello');
-fs.appendFileSync('notes.txt', 'hello2');
+/////////////////// use with utilis.js
+// const add = require('./utilis')
+// const sum = add(4, -2);
+// console.log(sum)
